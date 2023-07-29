@@ -1,0 +1,697 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="acmecollege.entity.TestCRUDMembershipCard" time="0.38" tests="6" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/fredmacedo/Documents/Algonquin College/Term4/CST8277_310 Enterprise Application Programming/Assignment3/ACMECollege-JPA-Mapping-JUnit-Skeleton/target/test-classes:/Users/fredmacedo/Documents/Algonquin College/Term4/CST8277_310 Enterprise Application Programming/Assignment3/ACMECollege-JPA-Mapping-JUnit-Skeleton/target/classes:/Users/fredmacedo/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.1/log4j-api-2.17.1.jar:/Users/fredmacedo/.m2/repository/org/apache/logging/log4j/log4j-core/2.17.1/log4j-core-2.17.1.jar:/Users/fredmacedo/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/Users/fredmacedo/.m2/repository/jakarta/persistence/jakarta.persistence-api/2.2.3/jakarta.persistence-api-2.2.3.jar:/Users/fredmacedo/.m2/repository/org/hibernate/hibernate-entitymanager/5.6.3.Final/hibernate-entitymanager-5.6.3.Final.jar:/Users/fredmacedo/.m2/repository/org/jboss/logging/jboss-logging/3.4.2.Final/jboss-logging-3.4.2.Final.jar:/Users/fredmacedo/.m2/repository/org/hibernate/hibernate-core/5.6.3.Final/hibernate-core-5.6.3.Final.jar:/Users/fredmacedo/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/Users/fredmacedo/.m2/repository/org/jboss/jandex/2.2.3.Final/jandex-2.2.3.Final.jar:/Users/fredmacedo/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/Users/fredmacedo/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/Users/fredmacedo/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/Users/fredmacedo/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1.jar:/Users/fredmacedo/.m2/repository/org/glassfish/jaxb/txw2/2.3.1/txw2-2.3.1.jar:/Users/fredmacedo/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.7/istack-commons-runtime-3.0.7.jar:/Users/fredmacedo/.m2/repository/org/jvnet/staxex/stax-ex/1.8/stax-ex-1.8.jar:/Users/fredmacedo/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.15/FastInfoset-1.2.15.jar:/Users/fredmacedo/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.2.Final/hibernate-commons-annotations-5.1.2.Final.jar:/Users/fredmacedo/.m2/repository/net/bytebuddy/byte-buddy/1.11.20/byte-buddy-1.11.20.jar:/Users/fredmacedo/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.jar:/Users/fredmacedo/.m2/repository/com/mysql/mysql-connector-j/8.0.31/mysql-connector-j-8.0.31.jar:/Users/fredmacedo/.m2/repository/com/google/protobuf/protobuf-java/3.19.4/protobuf-java-3.19.4.jar:/Users/fredmacedo/.m2/repository/org/junit/jupiter/junit-jupiter/5.7.0/junit-jupiter-5.7.0.jar:/Users/fredmacedo/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.0/junit-jupiter-api-5.7.0.jar:/Users/fredmacedo/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/fredmacedo/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/fredmacedo/.m2/repository/org/junit/platform/junit-platform-commons/1.7.0/junit-platform-commons-1.7.0.jar:/Users/fredmacedo/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.7.0/junit-jupiter-params-5.7.0.jar:/Users/fredmacedo/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.0/junit-jupiter-engine-5.7.0.jar:/Users/fredmacedo/.m2/repository/org/junit/platform/junit-platform-engine/1.7.0/junit-platform-engine-1.7.0.jar:/Users/fredmacedo/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/fredmacedo/.m2/repository/org/hamcrest/hamcrest-library/2.2/hamcrest-library-2.2.jar:/Users/fredmacedo/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="America/Toronto"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="CA"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/fredmacedo/Documents/Algonquin College/Term4/CST8277_310 Enterprise Application Programming/Assignment3/ACMECollege-JPA-Mapping-JUnit-Skeleton/target/surefire/surefirebooter10133783797923337493.jar /Users/fredmacedo/Documents/Algonquin College/Term4/CST8277_310 Enterprise Application Programming/Assignment3/ACMECollege-JPA-Mapping-JUnit-Skeleton/target/surefire 2023-07-28T20-16-13_785-jvmRun1 surefire14740707304417362584tmp surefire_015553642204890145700tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/fredmacedo/Documents/Algonquin College/Term4/CST8277_310 Enterprise Application Programming/Assignment3/ACMECollege-JPA-Mapping-JUnit-Skeleton/target/test-classes:/Users/fredmacedo/Documents/Algonquin College/Term4/CST8277_310 Enterprise Application Programming/Assignment3/ACMECollege-JPA-Mapping-JUnit-Skeleton/target/classes:/Users/fredmacedo/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.1/log4j-api-2.17.1.jar:/Users/fredmacedo/.m2/repository/org/apache/logging/log4j/log4j-core/2.17.1/log4j-core-2.17.1.jar:/Users/fredmacedo/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/Users/fredmacedo/.m2/repository/jakarta/persistence/jakarta.persistence-api/2.2.3/jakarta.persistence-api-2.2.3.jar:/Users/fredmacedo/.m2/repository/org/hibernate/hibernate-entitymanager/5.6.3.Final/hibernate-entitymanager-5.6.3.Final.jar:/Users/fredmacedo/.m2/repository/org/jboss/logging/jboss-logging/3.4.2.Final/jboss-logging-3.4.2.Final.jar:/Users/fredmacedo/.m2/repository/org/hibernate/hibernate-core/5.6.3.Final/hibernate-core-5.6.3.Final.jar:/Users/fredmacedo/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/Users/fredmacedo/.m2/repository/org/jboss/jandex/2.2.3.Final/jandex-2.2.3.Final.jar:/Users/fredmacedo/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/Users/fredmacedo/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/Users/fredmacedo/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/Users/fredmacedo/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1.jar:/Users/fredmacedo/.m2/repository/org/glassfish/jaxb/txw2/2.3.1/txw2-2.3.1.jar:/Users/fredmacedo/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.7/istack-commons-runtime-3.0.7.jar:/Users/fredmacedo/.m2/repository/org/jvnet/staxex/stax-ex/1.8/stax-ex-1.8.jar:/Users/fredmacedo/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.15/FastInfoset-1.2.15.jar:/Users/fredmacedo/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.2.Final/hibernate-commons-annotations-5.1.2.Final.jar:/Users/fredmacedo/.m2/repository/net/bytebuddy/byte-buddy/1.11.20/byte-buddy-1.11.20.jar:/Users/fredmacedo/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.jar:/Users/fredmacedo/.m2/repository/com/mysql/mysql-connector-j/8.0.31/mysql-connector-j-8.0.31.jar:/Users/fredmacedo/.m2/repository/com/google/protobuf/protobuf-java/3.19.4/protobuf-java-3.19.4.jar:/Users/fredmacedo/.m2/repository/org/junit/jupiter/junit-jupiter/5.7.0/junit-jupiter-5.7.0.jar:/Users/fredmacedo/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.0/junit-jupiter-api-5.7.0.jar:/Users/fredmacedo/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/fredmacedo/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/fredmacedo/.m2/repository/org/junit/platform/junit-platform-commons/1.7.0/junit-platform-commons-1.7.0.jar:/Users/fredmacedo/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.7.0/junit-jupiter-params-5.7.0.jar:/Users/fredmacedo/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.0/junit-jupiter-engine-5.7.0.jar:/Users/fredmacedo/.m2/repository/org/junit/platform/junit-platform-engine/1.7.0/junit-platform-engine-1.7.0.jar:/Users/fredmacedo/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/fredmacedo/.m2/repository/org/hamcrest/hamcrest-library/2.2/hamcrest-library-2.2.jar:/Users/fredmacedo/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/fredmacedo"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-04-18"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="style.color" value="always"/>
+    <property name="basedir" value="/Users/fredmacedo/Documents/Algonquin College/Term4/CST8277_310 Enterprise Application Programming/Assignment3/ACMECollege-JPA-Mapping-JUnit-Skeleton"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="/Users/fredmacedo/Documents/Algonquin College/Term4/CST8277_310 Enterprise Application Programming/Assignment3/ACMECollege-JPA-Mapping-JUnit-Skeleton/target/surefire/surefirebooter10133783797923337493.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="17.0.7+7"/>
+    <property name="user.name" value="fredmacedo"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="13.4.1"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="generateReports-false" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-17.0.7+7"/>
+    <property name="localRepository" value="/Users/fredmacedo/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/2g/6gqx2gk54w367ktllgpwmqth0000gp/T/"/>
+    <property name="java.version" value="17.0.7"/>
+    <property name="user.dir" value="/Users/fredmacedo/Documents/Algonquin College/Term4/CST8277_310 Enterprise Application Programming/Assignment3/ACMECollege-JPA-Mapping-JUnit-Skeleton"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/fredmacedo/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="17.0.7+7"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="test01_Empty" classname="acmecollege.entity.TestCRUDMembershipCard" time="0.006">
+    <system-out><![CDATA[2023-07-28T20:16:19,391|&amp#27;[33m[WARN ]&amp#27;[m pooling -HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2023-07-28T20:16:19,498|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    
+    use acmecollege
+2023-07-28T20:16:19,499|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    
+    SET FOREIGN_KEY_CHECKS = 0
+2023-07-28T20:16:19,499|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    
+    TRUNCATE TABLE acmecollege.professor
+2023-07-28T20:16:19,511|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    
+    TRUNCATE TABLE acmecollege.student_club
+2023-07-28T20:16:19,526|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    
+    TRUNCATE TABLE acmecollege.club_membership
+2023-07-28T20:16:19,538|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    
+    TRUNCATE TABLE acmecollege.course_registration
+2023-07-28T20:16:19,554|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    
+    TRUNCATE TABLE acmecollege.membership_card
+2023-07-28T20:16:19,569|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    
+    TRUNCATE TABLE acmecollege.student
+2023-07-28T20:16:19,582|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    
+    TRUNCATE TABLE acmecollege.course
+2023-07-28T20:16:19,595|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    
+    SET FOREIGN_KEY_CHECKS = 1
+2023-07-28T20:16:19,599|&amp#27;[36m[DEBUG]&amp#27;[m SQL -CREATE SCHEMA IF NOT EXISTS `acmecollege` DEFAULT CHARACTER SET utf8mb4
+2023-07-28T20:16:19,601|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    
+    USE `acmecollege`
+2023-07-28T20:16:19,601|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    
+    CREATE TABLE IF NOT EXISTS `student` (
+          `id` INT NOT NULL AUTO_INCREMENT,
+          `first_name` VARCHAR(50) NOT NULL,
+          `last_name` VARCHAR(50) NOT NULL,
+          `created` DATETIME NULL,
+          `updated` DATETIME NULL,
+          `version` BIGINT NOT NULL DEFAULT 1,
+          PRIMARY KEY (`id`) 
+    )
+2023-07-28T20:16:19,604|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    
+    CREATE TABLE IF NOT EXISTS `student_club` (
+          `club_id` INT NOT NULL AUTO_INCREMENT,
+          `name` VARCHAR(100) NOT NULL,
+          `academic` BIT(1) NOT NULL,
+          `created` DATETIME NULL,
+          `updated` DATETIME NULL,
+          `version` BIGINT NOT NULL DEFAULT 1,
+          PRIMARY KEY (`club_id`),
+          UNIQUE INDEX `name_UNIQUE` (`name` ASC) VISIBLE 
+    )
+2023-07-28T20:16:19,606|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    
+    CREATE TABLE IF NOT EXISTS `club_membership` (
+          `membership_id` INT NOT NULL AUTO_INCREMENT,
+          `club_id` INT NOT NULL,
+          `start_date` DATETIME NOT NULL,
+          `end_date` DATETIME NOT NULL,
+          `active` BIT(1) NOT NULL,
+          `created` DATETIME NULL,
+          `updated` DATETIME NULL,
+          `version` BIGINT NOT NULL DEFAULT 1,
+          PRIMARY KEY (`membership_id`),
+          INDEX `fk_club_membership_student_club1_idx` (`club_id` ASC) VISIBLE,
+          CONSTRAINT `fk_club_membership_student_club1`     FOREIGN KEY (`club_id`) REFERENCES `student_club` (`club_id`) ON DELETE NO ACTION ON UPDATE NO ACTION 
+    )
+2023-07-28T20:16:19,608|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    
+    CREATE TABLE IF NOT EXISTS `membership_card` (
+          `card_id` INT NOT NULL AUTO_INCREMENT,
+          `student_id` INT NOT NULL,
+          `membership_id` INT NULL,
+          `signed` BIT(1) NOT NULL,
+          `created` DATETIME NULL,
+          `updated` DATETIME NULL,
+          `version` BIGINT NOT NULL DEFAULT 1,
+          INDEX `fk_membership_card_student1_idx` (`student_id` ASC) VISIBLE,
+          INDEX `fk_membership_card_club_membership1_idx` (`membership_id` ASC) VISIBLE,
+          UNIQUE INDEX `card_id_UNIQUE` (`card_id` ASC) VISIBLE,
+          PRIMARY KEY (`card_id`),
+          CONSTRAINT `fk_membership_card_student1`     FOREIGN KEY (`student_id`)     REFERENCES `student` (`id`)     ON DELETE NO ACTION     ON UPDATE NO ACTION,
+          CONSTRAINT `fk_membership_card_club_membership1`     FOREIGN KEY (`membership_id`)     REFERENCES `club_membership` (`membership_id`)     ON DELETE NO ACTION     ON UPDATE NO ACTION 
+    )
+2023-07-28T20:16:19,609|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    
+    CREATE TABLE IF NOT EXISTS `professor` (
+          `professor_id` INT NOT NULL AUTO_INCREMENT,
+          `first_name` VARCHAR(50) NOT NULL,
+          `last_name` VARCHAR(50) NOT NULL,
+          `department` VARCHAR(50) NOT NULL,
+          `created` DATETIME NULL,
+          `updated` DATETIME NULL,
+          `version` BIGINT NOT NULL DEFAULT 1,
+          PRIMARY KEY (`professor_id`) 
+    )
+2023-07-28T20:16:19,611|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    
+    CREATE TABLE IF NOT EXISTS `course` (
+          `course_id` INT NOT NULL AUTO_INCREMENT,
+          `course_code` VARCHAR(7) NOT NULL,
+          `course_title` VARCHAR(100) NOT NULL,
+          `year` INT NOT NULL,
+          `semester` VARCHAR(6) NOT NULL,
+          `credit_units` INT NOT NULL,
+          `online` BIT(1) NOT NULL,
+          `created` DATETIME NULL,
+          `updated` DATETIME NULL,
+          `version` BIGINT NOT NULL DEFAULT 1,
+          PRIMARY KEY (`course_id`) 
+    )
+2023-07-28T20:16:19,612|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    
+    CREATE TABLE IF NOT EXISTS `course_registration` (
+          `student_id` INT NOT NULL,
+          `course_id` INT NOT NULL,
+          `numeric_grade` INT NULL,
+          `letter_grade` VARCHAR(3) NULL,
+          `professor_id` INT NULL,
+          `created` DATETIME NULL,
+          `updated` DATETIME NULL,
+          `version` BIGINT NOT NULL DEFAULT 1,
+          PRIMARY KEY (`student_id`, `course_id`),
+          INDEX `fk_course_registration_course1_idx` (`course_id` ASC) VISIBLE,
+          INDEX `fk_course_registration_student1_idx` (`student_id` ASC) VISIBLE,
+          CONSTRAINT `fk_course_registration_professor1`     FOREIGN KEY (`professor_id`)     REFERENCES `professor` (`professor_id`)     ON DELETE NO ACTION     ON UPDATE NO ACTION,
+          CONSTRAINT `fk_course_registration_course1`     FOREIGN KEY (`course_id`)     REFERENCES `course` (`course_id`)     ON DELETE NO ACTION     ON UPDATE NO ACTION,
+          CONSTRAINT `fk_course_registration_student1`     FOREIGN KEY (`student_id`)     REFERENCES `student` (`id`)     ON DELETE NO ACTION     ON UPDATE NO ACTION 
+    )
+2023-07-28T20:16:19,620|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* delete MembershipCard as generatedAlias0 
+    where
+        1=1 */ delete 
+        from
+            membership_card 
+        where
+            1=1
+2023-07-28T20:16:19,621|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* delete ClubMembership as generatedAlias0 
+    where
+        1=1 */ delete 
+        from
+            club_membership 
+        where
+            1=1
+2023-07-28T20:16:19,622|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* delete CourseRegistration as generatedAlias0 
+    where
+        1=1 */ delete 
+        from
+            course_registration 
+        where
+            1=1
+2023-07-28T20:16:19,623|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* delete Course as generatedAlias0 
+    where
+        1=1 */ delete 
+        from
+            course 
+        where
+            1=1
+2023-07-28T20:16:19,624|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* delete Student as generatedAlias0 
+    where
+        1=1 */ delete 
+        from
+            student 
+        where
+            1=1
+2023-07-28T20:16:19,625|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* delete Professor as generatedAlias0 
+    where
+        1=1 */ delete 
+        from
+            professor 
+        where
+            1=1
+2023-07-28T20:16:19,628|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* select
+        count(generatedAlias0) 
+    from
+        MembershipCard as generatedAlias0 */ select
+            count(membership0_.card_id) as col_0_0_ 
+        from
+            membership_card membership0_
+]]></system-out>
+  </testcase>
+  <testcase name="test02_Create" classname="acmecollege.entity.TestCRUDMembershipCard" time="0.013">
+    <system-out><![CDATA[2023-07-28T20:16:19,635|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* insert acmecollege.entity.NonAcademicStudentClub
+        */ insert 
+        into
+            student_club
+            (created, updated, version, name, academic) 
+        values
+            (?, ?, ?, ?, 0)
+2023-07-28T20:16:19,635|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [TIMESTAMP] - [2023-07-28T20:16:19.635276]
+2023-07-28T20:16:19,636|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [2] as [TIMESTAMP] - [2023-07-28T20:16:19.635276]
+2023-07-28T20:16:19,636|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [3] as [INTEGER] - [0]
+2023-07-28T20:16:19,636|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [4] as [VARCHAR] - [Student Hiking Club]
+2023-07-28T20:16:19,638|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* insert acmecollege.entity.ClubMembership
+        */ insert 
+        into
+            club_membership
+            (created, updated, version, club_id, active, end_date, start_date) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+2023-07-28T20:16:19,638|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [TIMESTAMP] - [2023-07-28T20:16:19.637445]
+2023-07-28T20:16:19,638|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [2] as [TIMESTAMP] - [2023-07-28T20:16:19.637445]
+2023-07-28T20:16:19,638|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [3] as [INTEGER] - [0]
+2023-07-28T20:16:19,638|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [4] as [INTEGER] - [1]
+2023-07-28T20:16:19,638|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [5] as [TINYINT] - [1]
+2023-07-28T20:16:19,638|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [6] as [TIMESTAMP] - [2023-08-27T00:00]
+2023-07-28T20:16:19,639|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [7] as [TIMESTAMP] - [2022-08-28T00:00]
+2023-07-28T20:16:19,640|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* insert acmecollege.entity.Student
+        */ insert 
+        into
+            student
+            (created, updated, version, first_name, last_name) 
+        values
+            (?, ?, ?, ?, ?)
+2023-07-28T20:16:19,641|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [TIMESTAMP] - [2023-07-28T20:16:19.640584]
+2023-07-28T20:16:19,641|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [2] as [TIMESTAMP] - [2023-07-28T20:16:19.640584]
+2023-07-28T20:16:19,641|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [3] as [INTEGER] - [0]
+2023-07-28T20:16:19,641|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [4] as [VARCHAR] - [John]
+2023-07-28T20:16:19,641|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [5] as [VARCHAR] - [Doe]
+2023-07-28T20:16:19,642|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* insert acmecollege.entity.MembershipCard
+        */ insert 
+        into
+            membership_card
+            (created, updated, version, membership_id, student_id, signed) 
+        values
+            (?, ?, ?, ?, ?, ?)
+2023-07-28T20:16:19,642|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [TIMESTAMP] - [2023-07-28T20:16:19.642334]
+2023-07-28T20:16:19,642|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [2] as [TIMESTAMP] - [2023-07-28T20:16:19.642334]
+2023-07-28T20:16:19,642|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [3] as [INTEGER] - [0]
+2023-07-28T20:16:19,642|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [4] as [INTEGER] - [1]
+2023-07-28T20:16:19,642|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [5] as [INTEGER] - [1]
+2023-07-28T20:16:19,642|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [6] as [TINYINT] - [0]
+2023-07-28T20:16:19,646|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* select
+        count(generatedAlias0) 
+    from
+        MembershipCard as generatedAlias0 
+    where
+        generatedAlias0.id=:id */ select
+            count(membership0_.card_id) as col_0_0_ 
+        from
+            membership_card membership0_ 
+        where
+            membership0_.card_id=?
+2023-07-28T20:16:19,646|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [INTEGER] - [1]
+]]></system-out>
+  </testcase>
+  <testcase name="test03_CreateInvalid" classname="acmecollege.entity.TestCRUDMembershipCard" time="0.011"/>
+  <testcase name="test04_Read" classname="acmecollege.entity.TestCRUDMembershipCard" time="0.011">
+    <system-out><![CDATA[2023-07-28T20:16:19,661|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* select
+        generatedAlias0 
+    from
+        MembershipCard as generatedAlias0 */ select
+            membership0_.card_id as card_id1_3_,
+            membership0_.created as created2_3_,
+            membership0_.updated as updated3_3_,
+            membership0_.version as version4_3_,
+            membership0_.membership_id as membersh6_3_,
+            membership0_.student_id as student_7_3_,
+            membership0_.signed as signed5_3_ 
+        from
+            membership_card membership0_
+2023-07-28T20:16:19,663|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    select
+        clubmember0_.membership_id as membersh1_0_0_,
+        clubmember0_.created as created2_0_0_,
+        clubmember0_.updated as updated3_0_0_,
+        clubmember0_.version as version4_0_0_,
+        clubmember0_.club_id as club_id8_0_0_,
+        clubmember0_.active as active5_0_0_,
+        clubmember0_.end_date as end_date6_0_0_,
+        clubmember0_.start_date as start_da7_0_0_,
+        studentclu1_.club_id as club_id2_6_1_,
+        studentclu1_.created as created3_6_1_,
+        studentclu1_.updated as updated4_6_1_,
+        studentclu1_.version as version5_6_1_,
+        studentclu1_.name as name6_6_1_,
+        studentclu1_.academic as academic1_6_1_,
+        membership2_.card_id as card_id1_3_2_,
+        membership2_.created as created2_3_2_,
+        membership2_.updated as updated3_3_2_,
+        membership2_.version as version4_3_2_,
+        membership2_.membership_id as membersh6_3_2_,
+        membership2_.student_id as student_7_3_2_,
+        membership2_.signed as signed5_3_2_,
+        student3_.id as id1_5_3_,
+        student3_.created as created2_5_3_,
+        student3_.updated as updated3_5_3_,
+        student3_.version as version4_5_3_,
+        student3_.first_name as first_na5_5_3_,
+        student3_.last_name as last_nam6_5_3_ 
+    from
+        club_membership clubmember0_ 
+    left outer join
+        student_club studentclu1_ 
+            on clubmember0_.club_id=studentclu1_.club_id 
+    left outer join
+        membership_card membership2_ 
+            on clubmember0_.membership_id=membership2_.membership_id 
+    left outer join
+        student student3_ 
+            on membership2_.student_id=student3_.id 
+    where
+        clubmember0_.membership_id=?
+2023-07-28T20:16:19,664|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [INTEGER] - [1]
+2023-07-28T20:16:19,667|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* load acmecollege.entity.MembershipCard */ select
+        membership0_.card_id as card_id1_3_3_,
+        membership0_.created as created2_3_3_,
+        membership0_.updated as updated3_3_3_,
+        membership0_.version as version4_3_3_,
+        membership0_.membership_id as membersh6_3_3_,
+        membership0_.student_id as student_7_3_3_,
+        membership0_.signed as signed5_3_3_,
+        clubmember1_.membership_id as membersh1_0_0_,
+        clubmember1_.created as created2_0_0_,
+        clubmember1_.updated as updated3_0_0_,
+        clubmember1_.version as version4_0_0_,
+        clubmember1_.club_id as club_id8_0_0_,
+        clubmember1_.active as active5_0_0_,
+        clubmember1_.end_date as end_date6_0_0_,
+        clubmember1_.start_date as start_da7_0_0_,
+        studentclu2_.club_id as club_id2_6_1_,
+        studentclu2_.created as created3_6_1_,
+        studentclu2_.updated as updated4_6_1_,
+        studentclu2_.version as version5_6_1_,
+        studentclu2_.name as name6_6_1_,
+        studentclu2_.academic as academic1_6_1_,
+        student3_.id as id1_5_2_,
+        student3_.created as created2_5_2_,
+        student3_.updated as updated3_5_2_,
+        student3_.version as version4_5_2_,
+        student3_.first_name as first_na5_5_2_,
+        student3_.last_name as last_nam6_5_2_ 
+    from
+        membership_card membership0_ 
+    left outer join
+        club_membership clubmember1_ 
+            on membership0_.membership_id=clubmember1_.membership_id 
+    left outer join
+        student_club studentclu2_ 
+            on clubmember1_.club_id=studentclu2_.club_id 
+    inner join
+        student student3_ 
+            on membership0_.student_id=student3_.id 
+    where
+        membership0_.membership_id=?
+2023-07-28T20:16:19,667|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [INTEGER] - [1]
+]]></system-out>
+  </testcase>
+  <testcase name="test05_ReadDependencies" classname="acmecollege.entity.TestCRUDMembershipCard" time="0.013">
+    <system-out><![CDATA[2023-07-28T20:16:19,673|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* select
+        generatedAlias0 
+    from
+        MembershipCard as generatedAlias0 
+    where
+        generatedAlias0.id=:id */ select
+            membership0_.card_id as card_id1_3_,
+            membership0_.created as created2_3_,
+            membership0_.updated as updated3_3_,
+            membership0_.version as version4_3_,
+            membership0_.membership_id as membersh6_3_,
+            membership0_.student_id as student_7_3_,
+            membership0_.signed as signed5_3_ 
+        from
+            membership_card membership0_ 
+        where
+            membership0_.card_id=?
+2023-07-28T20:16:19,678|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [INTEGER] - [1]
+2023-07-28T20:16:19,679|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    select
+        clubmember0_.membership_id as membersh1_0_0_,
+        clubmember0_.created as created2_0_0_,
+        clubmember0_.updated as updated3_0_0_,
+        clubmember0_.version as version4_0_0_,
+        clubmember0_.club_id as club_id8_0_0_,
+        clubmember0_.active as active5_0_0_,
+        clubmember0_.end_date as end_date6_0_0_,
+        clubmember0_.start_date as start_da7_0_0_,
+        studentclu1_.club_id as club_id2_6_1_,
+        studentclu1_.created as created3_6_1_,
+        studentclu1_.updated as updated4_6_1_,
+        studentclu1_.version as version5_6_1_,
+        studentclu1_.name as name6_6_1_,
+        studentclu1_.academic as academic1_6_1_,
+        membership2_.card_id as card_id1_3_2_,
+        membership2_.created as created2_3_2_,
+        membership2_.updated as updated3_3_2_,
+        membership2_.version as version4_3_2_,
+        membership2_.membership_id as membersh6_3_2_,
+        membership2_.student_id as student_7_3_2_,
+        membership2_.signed as signed5_3_2_,
+        student3_.id as id1_5_3_,
+        student3_.created as created2_5_3_,
+        student3_.updated as updated3_5_3_,
+        student3_.version as version4_5_3_,
+        student3_.first_name as first_na5_5_3_,
+        student3_.last_name as last_nam6_5_3_ 
+    from
+        club_membership clubmember0_ 
+    left outer join
+        student_club studentclu1_ 
+            on clubmember0_.club_id=studentclu1_.club_id 
+    left outer join
+        membership_card membership2_ 
+            on clubmember0_.membership_id=membership2_.membership_id 
+    left outer join
+        student student3_ 
+            on membership2_.student_id=student3_.id 
+    where
+        clubmember0_.membership_id=?
+2023-07-28T20:16:19,680|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [INTEGER] - [1]
+2023-07-28T20:16:19,682|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* load acmecollege.entity.MembershipCard */ select
+        membership0_.card_id as card_id1_3_3_,
+        membership0_.created as created2_3_3_,
+        membership0_.updated as updated3_3_3_,
+        membership0_.version as version4_3_3_,
+        membership0_.membership_id as membersh6_3_3_,
+        membership0_.student_id as student_7_3_3_,
+        membership0_.signed as signed5_3_3_,
+        clubmember1_.membership_id as membersh1_0_0_,
+        clubmember1_.created as created2_0_0_,
+        clubmember1_.updated as updated3_0_0_,
+        clubmember1_.version as version4_0_0_,
+        clubmember1_.club_id as club_id8_0_0_,
+        clubmember1_.active as active5_0_0_,
+        clubmember1_.end_date as end_date6_0_0_,
+        clubmember1_.start_date as start_da7_0_0_,
+        studentclu2_.club_id as club_id2_6_1_,
+        studentclu2_.created as created3_6_1_,
+        studentclu2_.updated as updated4_6_1_,
+        studentclu2_.version as version5_6_1_,
+        studentclu2_.name as name6_6_1_,
+        studentclu2_.academic as academic1_6_1_,
+        student3_.id as id1_5_2_,
+        student3_.created as created2_5_2_,
+        student3_.updated as updated3_5_2_,
+        student3_.version as version4_5_2_,
+        student3_.first_name as first_na5_5_2_,
+        student3_.last_name as last_nam6_5_2_ 
+    from
+        membership_card membership0_ 
+    left outer join
+        club_membership clubmember1_ 
+            on membership0_.membership_id=clubmember1_.membership_id 
+    left outer join
+        student_club studentclu2_ 
+            on clubmember1_.club_id=studentclu2_.club_id 
+    inner join
+        student student3_ 
+            on membership0_.student_id=student3_.id 
+    where
+        membership0_.membership_id=?
+2023-07-28T20:16:19,682|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [INTEGER] - [1]
+]]></system-out>
+  </testcase>
+  <testcase name="test06_Update" classname="acmecollege.entity.TestCRUDMembershipCard" time="0.044">
+    <system-out><![CDATA[2023-07-28T20:16:19,686|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* select
+        generatedAlias0 
+    from
+        MembershipCard as generatedAlias0 
+    where
+        generatedAlias0.id=:id */ select
+            membership0_.card_id as card_id1_3_,
+            membership0_.created as created2_3_,
+            membership0_.updated as updated3_3_,
+            membership0_.version as version4_3_,
+            membership0_.membership_id as membersh6_3_,
+            membership0_.student_id as student_7_3_,
+            membership0_.signed as signed5_3_ 
+        from
+            membership_card membership0_ 
+        where
+            membership0_.card_id=?
+2023-07-28T20:16:19,689|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [INTEGER] - [1]
+2023-07-28T20:16:19,694|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    select
+        clubmember0_.membership_id as membersh1_0_0_,
+        clubmember0_.created as created2_0_0_,
+        clubmember0_.updated as updated3_0_0_,
+        clubmember0_.version as version4_0_0_,
+        clubmember0_.club_id as club_id8_0_0_,
+        clubmember0_.active as active5_0_0_,
+        clubmember0_.end_date as end_date6_0_0_,
+        clubmember0_.start_date as start_da7_0_0_,
+        studentclu1_.club_id as club_id2_6_1_,
+        studentclu1_.created as created3_6_1_,
+        studentclu1_.updated as updated4_6_1_,
+        studentclu1_.version as version5_6_1_,
+        studentclu1_.name as name6_6_1_,
+        studentclu1_.academic as academic1_6_1_,
+        membership2_.card_id as card_id1_3_2_,
+        membership2_.created as created2_3_2_,
+        membership2_.updated as updated3_3_2_,
+        membership2_.version as version4_3_2_,
+        membership2_.membership_id as membersh6_3_2_,
+        membership2_.student_id as student_7_3_2_,
+        membership2_.signed as signed5_3_2_,
+        student3_.id as id1_5_3_,
+        student3_.created as created2_5_3_,
+        student3_.updated as updated3_5_3_,
+        student3_.version as version4_5_3_,
+        student3_.first_name as first_na5_5_3_,
+        student3_.last_name as last_nam6_5_3_ 
+    from
+        club_membership clubmember0_ 
+    left outer join
+        student_club studentclu1_ 
+            on clubmember0_.club_id=studentclu1_.club_id 
+    left outer join
+        membership_card membership2_ 
+            on clubmember0_.membership_id=membership2_.membership_id 
+    left outer join
+        student student3_ 
+            on membership2_.student_id=student3_.id 
+    where
+        clubmember0_.membership_id=?
+2023-07-28T20:16:19,694|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [INTEGER] - [1]
+2023-07-28T20:16:19,710|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* load acmecollege.entity.MembershipCard */ select
+        membership0_.card_id as card_id1_3_3_,
+        membership0_.created as created2_3_3_,
+        membership0_.updated as updated3_3_3_,
+        membership0_.version as version4_3_3_,
+        membership0_.membership_id as membersh6_3_3_,
+        membership0_.student_id as student_7_3_3_,
+        membership0_.signed as signed5_3_3_,
+        clubmember1_.membership_id as membersh1_0_0_,
+        clubmember1_.created as created2_0_0_,
+        clubmember1_.updated as updated3_0_0_,
+        clubmember1_.version as version4_0_0_,
+        clubmember1_.club_id as club_id8_0_0_,
+        clubmember1_.active as active5_0_0_,
+        clubmember1_.end_date as end_date6_0_0_,
+        clubmember1_.start_date as start_da7_0_0_,
+        studentclu2_.club_id as club_id2_6_1_,
+        studentclu2_.created as created3_6_1_,
+        studentclu2_.updated as updated4_6_1_,
+        studentclu2_.version as version5_6_1_,
+        studentclu2_.name as name6_6_1_,
+        studentclu2_.academic as academic1_6_1_,
+        student3_.id as id1_5_2_,
+        student3_.created as created2_5_2_,
+        student3_.updated as updated3_5_2_,
+        student3_.version as version4_5_2_,
+        student3_.first_name as first_na5_5_2_,
+        student3_.last_name as last_nam6_5_2_ 
+    from
+        membership_card membership0_ 
+    left outer join
+        club_membership clubmember1_ 
+            on membership0_.membership_id=clubmember1_.membership_id 
+    left outer join
+        student_club studentclu2_ 
+            on clubmember1_.club_id=studentclu2_.club_id 
+    inner join
+        student student3_ 
+            on membership0_.student_id=student3_.id 
+    where
+        membership0_.membership_id=?
+2023-07-28T20:16:19,710|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [INTEGER] - [1]
+2023-07-28T20:16:19,716|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* insert acmecollege.entity.Student
+        */ insert 
+        into
+            student
+            (created, updated, version, first_name, last_name) 
+        values
+            (?, ?, ?, ?, ?)
+2023-07-28T20:16:19,717|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [TIMESTAMP] - [2023-07-28T20:16:19.716241]
+2023-07-28T20:16:19,717|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [2] as [TIMESTAMP] - [2023-07-28T20:16:19.716241]
+2023-07-28T20:16:19,717|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [3] as [INTEGER] - [0]
+2023-07-28T20:16:19,717|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [4] as [VARCHAR] - [Jane]
+2023-07-28T20:16:19,717|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [5] as [VARCHAR] - [Doe]
+2023-07-28T20:16:19,719|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* update
+        acmecollege.entity.MembershipCard */ update
+            membership_card 
+        set
+            updated=?,
+            version=?,
+            membership_id=?,
+            student_id=?,
+            signed=? 
+        where
+            card_id=? 
+            and version=?
+2023-07-28T20:16:19,722|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [TIMESTAMP] - [2023-07-28T20:16:19.719269]
+2023-07-28T20:16:19,723|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [2] as [INTEGER] - [1]
+2023-07-28T20:16:19,723|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [3] as [INTEGER] - [1]
+2023-07-28T20:16:19,723|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [4] as [INTEGER] - [2]
+2023-07-28T20:16:19,723|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [5] as [TINYINT] - [0]
+2023-07-28T20:16:19,723|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [6] as [INTEGER] - [1]
+2023-07-28T20:16:19,723|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [7] as [INTEGER] - [0]
+2023-07-28T20:16:19,727|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* select
+        generatedAlias0 
+    from
+        MembershipCard as generatedAlias0 
+    where
+        generatedAlias0.id=:id */ select
+            membership0_.card_id as card_id1_3_,
+            membership0_.created as created2_3_,
+            membership0_.updated as updated3_3_,
+            membership0_.version as version4_3_,
+            membership0_.membership_id as membersh6_3_,
+            membership0_.student_id as student_7_3_,
+            membership0_.signed as signed5_3_ 
+        from
+            membership_card membership0_ 
+        where
+            membership0_.card_id=?
+2023-07-28T20:16:19,727|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [INTEGER] - [1]
+]]></system-out>
+  </testcase>
+</testsuite>

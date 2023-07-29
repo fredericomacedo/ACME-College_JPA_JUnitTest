@@ -1,0 +1,967 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="acmecollege.entity.TestCRUDCourseRegistrationOriginal" time="0.68" tests="9" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/fredmacedo/Documents/Algonquin College/Term4/CST8277_310 Enterprise Application Programming/Assignment3/ACMECollege-JPA-Mapping-JUnit-Skeleton/target/test-classes:/Users/fredmacedo/Documents/Algonquin College/Term4/CST8277_310 Enterprise Application Programming/Assignment3/ACMECollege-JPA-Mapping-JUnit-Skeleton/target/classes:/Users/fredmacedo/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.1/log4j-api-2.17.1.jar:/Users/fredmacedo/.m2/repository/org/apache/logging/log4j/log4j-core/2.17.1/log4j-core-2.17.1.jar:/Users/fredmacedo/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/Users/fredmacedo/.m2/repository/jakarta/persistence/jakarta.persistence-api/2.2.3/jakarta.persistence-api-2.2.3.jar:/Users/fredmacedo/.m2/repository/org/hibernate/hibernate-entitymanager/5.6.3.Final/hibernate-entitymanager-5.6.3.Final.jar:/Users/fredmacedo/.m2/repository/org/jboss/logging/jboss-logging/3.4.2.Final/jboss-logging-3.4.2.Final.jar:/Users/fredmacedo/.m2/repository/org/hibernate/hibernate-core/5.6.3.Final/hibernate-core-5.6.3.Final.jar:/Users/fredmacedo/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/Users/fredmacedo/.m2/repository/org/jboss/jandex/2.2.3.Final/jandex-2.2.3.Final.jar:/Users/fredmacedo/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/Users/fredmacedo/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/Users/fredmacedo/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/Users/fredmacedo/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1.jar:/Users/fredmacedo/.m2/repository/org/glassfish/jaxb/txw2/2.3.1/txw2-2.3.1.jar:/Users/fredmacedo/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.7/istack-commons-runtime-3.0.7.jar:/Users/fredmacedo/.m2/repository/org/jvnet/staxex/stax-ex/1.8/stax-ex-1.8.jar:/Users/fredmacedo/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.15/FastInfoset-1.2.15.jar:/Users/fredmacedo/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.2.Final/hibernate-commons-annotations-5.1.2.Final.jar:/Users/fredmacedo/.m2/repository/net/bytebuddy/byte-buddy/1.11.20/byte-buddy-1.11.20.jar:/Users/fredmacedo/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.jar:/Users/fredmacedo/.m2/repository/com/mysql/mysql-connector-j/8.0.31/mysql-connector-j-8.0.31.jar:/Users/fredmacedo/.m2/repository/com/google/protobuf/protobuf-java/3.19.4/protobuf-java-3.19.4.jar:/Users/fredmacedo/.m2/repository/org/junit/jupiter/junit-jupiter/5.7.0/junit-jupiter-5.7.0.jar:/Users/fredmacedo/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.0/junit-jupiter-api-5.7.0.jar:/Users/fredmacedo/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/fredmacedo/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/fredmacedo/.m2/repository/org/junit/platform/junit-platform-commons/1.7.0/junit-platform-commons-1.7.0.jar:/Users/fredmacedo/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.7.0/junit-jupiter-params-5.7.0.jar:/Users/fredmacedo/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.0/junit-jupiter-engine-5.7.0.jar:/Users/fredmacedo/.m2/repository/org/junit/platform/junit-platform-engine/1.7.0/junit-platform-engine-1.7.0.jar:/Users/fredmacedo/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/fredmacedo/.m2/repository/org/hamcrest/hamcrest-library/2.2/hamcrest-library-2.2.jar:/Users/fredmacedo/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="America/Toronto"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="CA"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/fredmacedo/Documents/Algonquin College/Term4/CST8277_310 Enterprise Application Programming/Assignment3/ACMECollege-JPA-Mapping-JUnit-Skeleton/target/surefire/surefirebooter10133783797923337493.jar /Users/fredmacedo/Documents/Algonquin College/Term4/CST8277_310 Enterprise Application Programming/Assignment3/ACMECollege-JPA-Mapping-JUnit-Skeleton/target/surefire 2023-07-28T20-16-13_785-jvmRun1 surefire14740707304417362584tmp surefire_015553642204890145700tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/fredmacedo/Documents/Algonquin College/Term4/CST8277_310 Enterprise Application Programming/Assignment3/ACMECollege-JPA-Mapping-JUnit-Skeleton/target/test-classes:/Users/fredmacedo/Documents/Algonquin College/Term4/CST8277_310 Enterprise Application Programming/Assignment3/ACMECollege-JPA-Mapping-JUnit-Skeleton/target/classes:/Users/fredmacedo/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.1/log4j-api-2.17.1.jar:/Users/fredmacedo/.m2/repository/org/apache/logging/log4j/log4j-core/2.17.1/log4j-core-2.17.1.jar:/Users/fredmacedo/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/Users/fredmacedo/.m2/repository/jakarta/persistence/jakarta.persistence-api/2.2.3/jakarta.persistence-api-2.2.3.jar:/Users/fredmacedo/.m2/repository/org/hibernate/hibernate-entitymanager/5.6.3.Final/hibernate-entitymanager-5.6.3.Final.jar:/Users/fredmacedo/.m2/repository/org/jboss/logging/jboss-logging/3.4.2.Final/jboss-logging-3.4.2.Final.jar:/Users/fredmacedo/.m2/repository/org/hibernate/hibernate-core/5.6.3.Final/hibernate-core-5.6.3.Final.jar:/Users/fredmacedo/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/Users/fredmacedo/.m2/repository/org/jboss/jandex/2.2.3.Final/jandex-2.2.3.Final.jar:/Users/fredmacedo/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/Users/fredmacedo/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/Users/fredmacedo/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/Users/fredmacedo/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1.jar:/Users/fredmacedo/.m2/repository/org/glassfish/jaxb/txw2/2.3.1/txw2-2.3.1.jar:/Users/fredmacedo/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.7/istack-commons-runtime-3.0.7.jar:/Users/fredmacedo/.m2/repository/org/jvnet/staxex/stax-ex/1.8/stax-ex-1.8.jar:/Users/fredmacedo/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.15/FastInfoset-1.2.15.jar:/Users/fredmacedo/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.2.Final/hibernate-commons-annotations-5.1.2.Final.jar:/Users/fredmacedo/.m2/repository/net/bytebuddy/byte-buddy/1.11.20/byte-buddy-1.11.20.jar:/Users/fredmacedo/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.jar:/Users/fredmacedo/.m2/repository/com/mysql/mysql-connector-j/8.0.31/mysql-connector-j-8.0.31.jar:/Users/fredmacedo/.m2/repository/com/google/protobuf/protobuf-java/3.19.4/protobuf-java-3.19.4.jar:/Users/fredmacedo/.m2/repository/org/junit/jupiter/junit-jupiter/5.7.0/junit-jupiter-5.7.0.jar:/Users/fredmacedo/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.0/junit-jupiter-api-5.7.0.jar:/Users/fredmacedo/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/fredmacedo/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/fredmacedo/.m2/repository/org/junit/platform/junit-platform-commons/1.7.0/junit-platform-commons-1.7.0.jar:/Users/fredmacedo/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.7.0/junit-jupiter-params-5.7.0.jar:/Users/fredmacedo/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.0/junit-jupiter-engine-5.7.0.jar:/Users/fredmacedo/.m2/repository/org/junit/platform/junit-platform-engine/1.7.0/junit-platform-engine-1.7.0.jar:/Users/fredmacedo/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/fredmacedo/.m2/repository/org/hamcrest/hamcrest-library/2.2/hamcrest-library-2.2.jar:/Users/fredmacedo/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/fredmacedo"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-04-18"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="style.color" value="always"/>
+    <property name="basedir" value="/Users/fredmacedo/Documents/Algonquin College/Term4/CST8277_310 Enterprise Application Programming/Assignment3/ACMECollege-JPA-Mapping-JUnit-Skeleton"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="/Users/fredmacedo/Documents/Algonquin College/Term4/CST8277_310 Enterprise Application Programming/Assignment3/ACMECollege-JPA-Mapping-JUnit-Skeleton/target/surefire/surefirebooter10133783797923337493.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="17.0.7+7"/>
+    <property name="user.name" value="fredmacedo"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="13.4.1"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="generateReports-false" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-17.0.7+7"/>
+    <property name="localRepository" value="/Users/fredmacedo/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/2g/6gqx2gk54w367ktllgpwmqth0000gp/T/"/>
+    <property name="java.version" value="17.0.7"/>
+    <property name="user.dir" value="/Users/fredmacedo/Documents/Algonquin College/Term4/CST8277_310 Enterprise Application Programming/Assignment3/ACMECollege-JPA-Mapping-JUnit-Skeleton"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/fredmacedo/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="17.0.7+7"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="test01_Empty" classname="acmecollege.entity.TestCRUDCourseRegistrationOriginal" time="0.01">
+    <system-out><![CDATA[2023-07-28T20:16:18,023|&amp#27;[33m[WARN ]&amp#27;[m pooling -HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2023-07-28T20:16:18,210|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    
+    use acmecollege
+2023-07-28T20:16:18,211|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    
+    SET FOREIGN_KEY_CHECKS = 0
+2023-07-28T20:16:18,211|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    
+    TRUNCATE TABLE acmecollege.professor
+2023-07-28T20:16:18,222|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    
+    TRUNCATE TABLE acmecollege.student_club
+2023-07-28T20:16:18,235|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    
+    TRUNCATE TABLE acmecollege.club_membership
+2023-07-28T20:16:18,246|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    
+    TRUNCATE TABLE acmecollege.course_registration
+2023-07-28T20:16:18,259|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    
+    TRUNCATE TABLE acmecollege.membership_card
+2023-07-28T20:16:18,271|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    
+    TRUNCATE TABLE acmecollege.student
+2023-07-28T20:16:18,281|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    
+    TRUNCATE TABLE acmecollege.course
+2023-07-28T20:16:18,291|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    
+    SET FOREIGN_KEY_CHECKS = 1
+2023-07-28T20:16:18,296|&amp#27;[36m[DEBUG]&amp#27;[m SQL -CREATE SCHEMA IF NOT EXISTS `acmecollege` DEFAULT CHARACTER SET utf8mb4
+2023-07-28T20:16:18,300|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    
+    USE `acmecollege`
+2023-07-28T20:16:18,300|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    
+    CREATE TABLE IF NOT EXISTS `student` (
+          `id` INT NOT NULL AUTO_INCREMENT,
+          `first_name` VARCHAR(50) NOT NULL,
+          `last_name` VARCHAR(50) NOT NULL,
+          `created` DATETIME NULL,
+          `updated` DATETIME NULL,
+          `version` BIGINT NOT NULL DEFAULT 1,
+          PRIMARY KEY (`id`) 
+    )
+2023-07-28T20:16:18,302|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    
+    CREATE TABLE IF NOT EXISTS `student_club` (
+          `club_id` INT NOT NULL AUTO_INCREMENT,
+          `name` VARCHAR(100) NOT NULL,
+          `academic` BIT(1) NOT NULL,
+          `created` DATETIME NULL,
+          `updated` DATETIME NULL,
+          `version` BIGINT NOT NULL DEFAULT 1,
+          PRIMARY KEY (`club_id`),
+          UNIQUE INDEX `name_UNIQUE` (`name` ASC) VISIBLE 
+    )
+2023-07-28T20:16:18,305|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    
+    CREATE TABLE IF NOT EXISTS `club_membership` (
+          `membership_id` INT NOT NULL AUTO_INCREMENT,
+          `club_id` INT NOT NULL,
+          `start_date` DATETIME NOT NULL,
+          `end_date` DATETIME NOT NULL,
+          `active` BIT(1) NOT NULL,
+          `created` DATETIME NULL,
+          `updated` DATETIME NULL,
+          `version` BIGINT NOT NULL DEFAULT 1,
+          PRIMARY KEY (`membership_id`),
+          INDEX `fk_club_membership_student_club1_idx` (`club_id` ASC) VISIBLE,
+          CONSTRAINT `fk_club_membership_student_club1`     FOREIGN KEY (`club_id`) REFERENCES `student_club` (`club_id`) ON DELETE NO ACTION ON UPDATE NO ACTION 
+    )
+2023-07-28T20:16:18,308|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    
+    CREATE TABLE IF NOT EXISTS `membership_card` (
+          `card_id` INT NOT NULL AUTO_INCREMENT,
+          `student_id` INT NOT NULL,
+          `membership_id` INT NULL,
+          `signed` BIT(1) NOT NULL,
+          `created` DATETIME NULL,
+          `updated` DATETIME NULL,
+          `version` BIGINT NOT NULL DEFAULT 1,
+          INDEX `fk_membership_card_student1_idx` (`student_id` ASC) VISIBLE,
+          INDEX `fk_membership_card_club_membership1_idx` (`membership_id` ASC) VISIBLE,
+          UNIQUE INDEX `card_id_UNIQUE` (`card_id` ASC) VISIBLE,
+          PRIMARY KEY (`card_id`),
+          CONSTRAINT `fk_membership_card_student1`     FOREIGN KEY (`student_id`)     REFERENCES `student` (`id`)     ON DELETE NO ACTION     ON UPDATE NO ACTION,
+          CONSTRAINT `fk_membership_card_club_membership1`     FOREIGN KEY (`membership_id`)     REFERENCES `club_membership` (`membership_id`)     ON DELETE NO ACTION     ON UPDATE NO ACTION 
+    )
+2023-07-28T20:16:18,310|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    
+    CREATE TABLE IF NOT EXISTS `professor` (
+          `professor_id` INT NOT NULL AUTO_INCREMENT,
+          `first_name` VARCHAR(50) NOT NULL,
+          `last_name` VARCHAR(50) NOT NULL,
+          `department` VARCHAR(50) NOT NULL,
+          `created` DATETIME NULL,
+          `updated` DATETIME NULL,
+          `version` BIGINT NOT NULL DEFAULT 1,
+          PRIMARY KEY (`professor_id`) 
+    )
+2023-07-28T20:16:18,312|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    
+    CREATE TABLE IF NOT EXISTS `course` (
+          `course_id` INT NOT NULL AUTO_INCREMENT,
+          `course_code` VARCHAR(7) NOT NULL,
+          `course_title` VARCHAR(100) NOT NULL,
+          `year` INT NOT NULL,
+          `semester` VARCHAR(6) NOT NULL,
+          `credit_units` INT NOT NULL,
+          `online` BIT(1) NOT NULL,
+          `created` DATETIME NULL,
+          `updated` DATETIME NULL,
+          `version` BIGINT NOT NULL DEFAULT 1,
+          PRIMARY KEY (`course_id`) 
+    )
+2023-07-28T20:16:18,314|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    
+    CREATE TABLE IF NOT EXISTS `course_registration` (
+          `student_id` INT NOT NULL,
+          `course_id` INT NOT NULL,
+          `numeric_grade` INT NULL,
+          `letter_grade` VARCHAR(3) NULL,
+          `professor_id` INT NULL,
+          `created` DATETIME NULL,
+          `updated` DATETIME NULL,
+          `version` BIGINT NOT NULL DEFAULT 1,
+          PRIMARY KEY (`student_id`, `course_id`),
+          INDEX `fk_course_registration_course1_idx` (`course_id` ASC) VISIBLE,
+          INDEX `fk_course_registration_student1_idx` (`student_id` ASC) VISIBLE,
+          CONSTRAINT `fk_course_registration_professor1`     FOREIGN KEY (`professor_id`)     REFERENCES `professor` (`professor_id`)     ON DELETE NO ACTION     ON UPDATE NO ACTION,
+          CONSTRAINT `fk_course_registration_course1`     FOREIGN KEY (`course_id`)     REFERENCES `course` (`course_id`)     ON DELETE NO ACTION     ON UPDATE NO ACTION,
+          CONSTRAINT `fk_course_registration_student1`     FOREIGN KEY (`student_id`)     REFERENCES `student` (`id`)     ON DELETE NO ACTION     ON UPDATE NO ACTION 
+    )
+2023-07-28T20:16:18,323|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* delete MembershipCard as generatedAlias0 
+    where
+        1=1 */ delete 
+        from
+            membership_card 
+        where
+            1=1
+2023-07-28T20:16:18,325|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* delete ClubMembership as generatedAlias0 
+    where
+        1=1 */ delete 
+        from
+            club_membership 
+        where
+            1=1
+2023-07-28T20:16:18,326|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* delete CourseRegistration as generatedAlias0 
+    where
+        1=1 */ delete 
+        from
+            course_registration 
+        where
+            1=1
+2023-07-28T20:16:18,328|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* delete Course as generatedAlias0 
+    where
+        1=1 */ delete 
+        from
+            course 
+        where
+            1=1
+2023-07-28T20:16:18,330|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* delete Student as generatedAlias0 
+    where
+        1=1 */ delete 
+        from
+            student 
+        where
+            1=1
+2023-07-28T20:16:18,331|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* delete Professor as generatedAlias0 
+    where
+        1=1 */ delete 
+        from
+            professor 
+        where
+            1=1
+2023-07-28T20:16:18,335|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* select
+        count(generatedAlias0) 
+    from
+        CourseRegistration as generatedAlias0 */ select
+            count(courseregi0_.course_id) as col_0_0_ 
+        from
+            course_registration courseregi0_
+]]></system-out>
+  </testcase>
+  <testcase name="test02_Create" classname="acmecollege.entity.TestCRUDCourseRegistrationOriginal" time="0.022">
+    <system-out><![CDATA[2023-07-28T20:16:18,346|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* insert acmecollege.entity.Course
+        */ insert 
+        into
+            course
+            (created, updated, version, course_code, course_title, credit_units, online, semester, year) 
+        values
+            (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-07-28T20:16:18,347|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [TIMESTAMP] - [2023-07-28T20:16:18.346066]
+2023-07-28T20:16:18,347|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [2] as [TIMESTAMP] - [2023-07-28T20:16:18.346066]
+2023-07-28T20:16:18,347|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [3] as [INTEGER] - [0]
+2023-07-28T20:16:18,347|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [4] as [VARCHAR] - [CST8277]
+2023-07-28T20:16:18,347|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [5] as [VARCHAR] - [Enterprise Application Programming]
+2023-07-28T20:16:18,347|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [6] as [INTEGER] - [3]
+2023-07-28T20:16:18,348|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [7] as [TINYINT] - [0]
+2023-07-28T20:16:18,348|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [8] as [VARCHAR] - [AUTUMN]
+2023-07-28T20:16:18,348|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [9] as [INTEGER] - [2022]
+2023-07-28T20:16:18,350|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* insert acmecollege.entity.Student
+        */ insert 
+        into
+            student
+            (created, updated, version, first_name, last_name) 
+        values
+            (?, ?, ?, ?, ?)
+2023-07-28T20:16:18,350|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [TIMESTAMP] - [2023-07-28T20:16:18.349812]
+2023-07-28T20:16:18,350|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [2] as [TIMESTAMP] - [2023-07-28T20:16:18.349812]
+2023-07-28T20:16:18,350|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [3] as [INTEGER] - [0]
+2023-07-28T20:16:18,350|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [4] as [VARCHAR] - [John]
+2023-07-28T20:16:18,350|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [5] as [VARCHAR] - [Smith]
+2023-07-28T20:16:18,352|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* insert acmecollege.entity.Professor
+        */ insert 
+        into
+            professor
+            (created, updated, version, department, first_name, last_name) 
+        values
+            (?, ?, ?, ?, ?, ?)
+2023-07-28T20:16:18,353|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [TIMESTAMP] - [2023-07-28T20:16:18.352349]
+2023-07-28T20:16:18,353|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [2] as [TIMESTAMP] - [2023-07-28T20:16:18.352349]
+2023-07-28T20:16:18,353|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [3] as [INTEGER] - [0]
+2023-07-28T20:16:18,353|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [4] as [VARCHAR] - [Information and Communications Technology]
+2023-07-28T20:16:18,353|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [5] as [VARCHAR] - [Teddy]
+2023-07-28T20:16:18,353|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [6] as [VARCHAR] - [Yap]
+2023-07-28T20:16:18,358|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* insert acmecollege.entity.CourseRegistration
+        */ insert 
+        into
+            course_registration
+            (created, updated, version, letter_grade, numeric_grade, professor_id, course_id, student_id) 
+        values
+            (?, ?, ?, ?, ?, ?, ?, ?)
+2023-07-28T20:16:18,358|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [TIMESTAMP] - [2023-07-28T20:16:18.345393]
+2023-07-28T20:16:18,358|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [2] as [TIMESTAMP] - [2023-07-28T20:16:18.345393]
+2023-07-28T20:16:18,358|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [3] as [INTEGER] - [0]
+2023-07-28T20:16:18,358|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [4] as [VARCHAR] - [A+]
+2023-07-28T20:16:18,359|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [5] as [INTEGER] - [100]
+2023-07-28T20:16:18,359|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [6] as [INTEGER] - [1]
+2023-07-28T20:16:18,359|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [7] as [INTEGER] - [1]
+2023-07-28T20:16:18,359|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [8] as [INTEGER] - [1]
+2023-07-28T20:16:18,363|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* select
+        count(generatedAlias0) 
+    from
+        CourseRegistration as generatedAlias0 
+    where
+        generatedAlias0.id=:id */ select
+            count(courseregi0_.course_id) as col_0_0_ 
+        from
+            course_registration courseregi0_ 
+        where
+            (
+                courseregi0_.course_id, courseregi0_.student_id
+            )=(
+                ?, ?
+            )
+2023-07-28T20:16:18,363|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [INTEGER] - [1]
+2023-07-28T20:16:18,363|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [2] as [INTEGER] - [1]
+]]></system-out>
+  </testcase>
+  <testcase name="test03_CreateInvalid" classname="acmecollege.entity.TestCRUDCourseRegistrationOriginal" time="0.003"/>
+  <testcase name="test04_Read" classname="acmecollege.entity.TestCRUDCourseRegistrationOriginal" time="0.012">
+    <system-out><![CDATA[2023-07-28T20:16:18,380|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* select
+        generatedAlias0 
+    from
+        CourseRegistration as generatedAlias0 */ select
+            courseregi0_.course_id as course_i1_2_,
+            courseregi0_.student_id as student_2_2_,
+            courseregi0_.created as created3_2_,
+            courseregi0_.updated as updated4_2_,
+            courseregi0_.version as version5_2_,
+            courseregi0_.letter_grade as letter_g6_2_,
+            courseregi0_.numeric_grade as numeric_7_2_,
+            courseregi0_.professor_id as professo8_2_ 
+        from
+            course_registration courseregi0_
+]]></system-out>
+  </testcase>
+  <testcase name="test05_ReadDependencies" classname="acmecollege.entity.TestCRUDCourseRegistrationOriginal" time="0.042">
+    <system-out><![CDATA[2023-07-28T20:16:18,395|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* select
+        generatedAlias0 
+    from
+        CourseRegistration as generatedAlias0 
+    where
+        generatedAlias0.id=:id */ select
+            courseregi0_.course_id as course_i1_2_,
+            courseregi0_.student_id as student_2_2_,
+            courseregi0_.created as created3_2_,
+            courseregi0_.updated as updated4_2_,
+            courseregi0_.version as version5_2_,
+            courseregi0_.letter_grade as letter_g6_2_,
+            courseregi0_.numeric_grade as numeric_7_2_,
+            courseregi0_.professor_id as professo8_2_ 
+        from
+            course_registration courseregi0_ 
+        where
+            (
+                courseregi0_.course_id, courseregi0_.student_id
+            )=(
+                ?, ?
+            )
+2023-07-28T20:16:18,396|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [INTEGER] - [1]
+2023-07-28T20:16:18,396|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [2] as [INTEGER] - [1]
+2023-07-28T20:16:18,422|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    select
+        student0_.id as id1_5_0_,
+        student0_.created as created2_5_0_,
+        student0_.updated as updated3_5_0_,
+        student0_.version as version4_5_0_,
+        student0_.first_name as first_na5_5_0_,
+        student0_.last_name as last_nam6_5_0_ 
+    from
+        student student0_ 
+    where
+        student0_.id=?
+2023-07-28T20:16:18,423|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [INTEGER] - [1]
+2023-07-28T20:16:18,427|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    select
+        course0_.course_id as course_i1_1_0_,
+        course0_.created as created2_1_0_,
+        course0_.updated as updated3_1_0_,
+        course0_.version as version4_1_0_,
+        course0_.course_code as course_c5_1_0_,
+        course0_.course_title as course_t6_1_0_,
+        course0_.credit_units as credit_u7_1_0_,
+        course0_.online as online8_1_0_,
+        course0_.semester as semester9_1_0_,
+        course0_.year as year10_1_0_ 
+    from
+        course course0_ 
+    where
+        course0_.course_id=?
+2023-07-28T20:16:18,428|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [INTEGER] - [1]
+2023-07-28T20:16:18,431|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    select
+        professor0_.professor_id as professo1_4_0_,
+        professor0_.created as created2_4_0_,
+        professor0_.updated as updated3_4_0_,
+        professor0_.version as version4_4_0_,
+        professor0_.department as departme5_4_0_,
+        professor0_.first_name as first_na6_4_0_,
+        professor0_.last_name as last_nam7_4_0_ 
+    from
+        professor professor0_ 
+    where
+        professor0_.professor_id=?
+2023-07-28T20:16:18,431|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [INTEGER] - [1]
+]]></system-out>
+  </testcase>
+  <testcase name="test06_Update" classname="acmecollege.entity.TestCRUDCourseRegistrationOriginal" time="0.017">
+    <system-out><![CDATA[2023-07-28T20:16:18,440|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* select
+        generatedAlias0 
+    from
+        CourseRegistration as generatedAlias0 
+    where
+        generatedAlias0.id=:id */ select
+            courseregi0_.course_id as course_i1_2_,
+            courseregi0_.student_id as student_2_2_,
+            courseregi0_.created as created3_2_,
+            courseregi0_.updated as updated4_2_,
+            courseregi0_.version as version5_2_,
+            courseregi0_.letter_grade as letter_g6_2_,
+            courseregi0_.numeric_grade as numeric_7_2_,
+            courseregi0_.professor_id as professo8_2_ 
+        from
+            course_registration courseregi0_ 
+        where
+            (
+                courseregi0_.course_id, courseregi0_.student_id
+            )=(
+                ?, ?
+            )
+2023-07-28T20:16:18,442|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [INTEGER] - [1]
+2023-07-28T20:16:18,442|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [2] as [INTEGER] - [1]
+2023-07-28T20:16:18,448|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* update
+        acmecollege.entity.CourseRegistration */ update
+            course_registration 
+        set
+            updated=?,
+            version=?,
+            letter_grade=?,
+            numeric_grade=?,
+            professor_id=? 
+        where
+            course_id=? 
+            and student_id=? 
+            and version=?
+2023-07-28T20:16:18,448|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [TIMESTAMP] - [2023-07-28T20:16:18.448027]
+2023-07-28T20:16:18,448|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [2] as [INTEGER] - [1]
+2023-07-28T20:16:18,449|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [3] as [VARCHAR] - [A]
+2023-07-28T20:16:18,449|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [4] as [INTEGER] - [85]
+2023-07-28T20:16:18,449|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [5] as [INTEGER] - [1]
+2023-07-28T20:16:18,449|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [6] as [INTEGER] - [1]
+2023-07-28T20:16:18,449|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [7] as [INTEGER] - [1]
+2023-07-28T20:16:18,449|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [8] as [INTEGER] - [0]
+2023-07-28T20:16:18,452|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* select
+        generatedAlias0 
+    from
+        CourseRegistration as generatedAlias0 
+    where
+        generatedAlias0.id=:id */ select
+            courseregi0_.course_id as course_i1_2_,
+            courseregi0_.student_id as student_2_2_,
+            courseregi0_.created as created3_2_,
+            courseregi0_.updated as updated4_2_,
+            courseregi0_.version as version5_2_,
+            courseregi0_.letter_grade as letter_g6_2_,
+            courseregi0_.numeric_grade as numeric_7_2_,
+            courseregi0_.professor_id as professo8_2_ 
+        from
+            course_registration courseregi0_ 
+        where
+            (
+                courseregi0_.course_id, courseregi0_.student_id
+            )=(
+                ?, ?
+            )
+2023-07-28T20:16:18,453|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [INTEGER] - [1]
+2023-07-28T20:16:18,453|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [2] as [INTEGER] - [1]
+]]></system-out>
+  </testcase>
+  <testcase name="test07_UpdateDependencies" classname="acmecollege.entity.TestCRUDCourseRegistrationOriginal" time="0.052">
+    <system-out><![CDATA[2023-07-28T20:16:18,458|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* select
+        generatedAlias0 
+    from
+        CourseRegistration as generatedAlias0 
+    where
+        generatedAlias0.id=:id */ select
+            courseregi0_.course_id as course_i1_2_,
+            courseregi0_.student_id as student_2_2_,
+            courseregi0_.created as created3_2_,
+            courseregi0_.updated as updated4_2_,
+            courseregi0_.version as version5_2_,
+            courseregi0_.letter_grade as letter_g6_2_,
+            courseregi0_.numeric_grade as numeric_7_2_,
+            courseregi0_.professor_id as professo8_2_ 
+        from
+            course_registration courseregi0_ 
+        where
+            (
+                courseregi0_.course_id, courseregi0_.student_id
+            )=(
+                ?, ?
+            )
+2023-07-28T20:16:18,459|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [INTEGER] - [1]
+2023-07-28T20:16:18,460|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [2] as [INTEGER] - [1]
+2023-07-28T20:16:18,462|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    select
+        course0_.course_id as course_i1_1_0_,
+        course0_.created as created2_1_0_,
+        course0_.updated as updated3_1_0_,
+        course0_.version as version4_1_0_,
+        course0_.course_code as course_c5_1_0_,
+        course0_.course_title as course_t6_1_0_,
+        course0_.credit_units as credit_u7_1_0_,
+        course0_.online as online8_1_0_,
+        course0_.semester as semester9_1_0_,
+        course0_.year as year10_1_0_ 
+    from
+        course course0_ 
+    where
+        course0_.course_id=?
+2023-07-28T20:16:18,462|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [INTEGER] - [1]
+2023-07-28T20:16:18,464|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    select
+        professor0_.professor_id as professo1_4_0_,
+        professor0_.created as created2_4_0_,
+        professor0_.updated as updated3_4_0_,
+        professor0_.version as version4_4_0_,
+        professor0_.department as departme5_4_0_,
+        professor0_.first_name as first_na6_4_0_,
+        professor0_.last_name as last_nam7_4_0_ 
+    from
+        professor professor0_ 
+    where
+        professor0_.professor_id=?
+2023-07-28T20:16:18,465|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [INTEGER] - [1]
+2023-07-28T20:16:18,469|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    select
+        student0_.id as id1_5_0_,
+        student0_.created as created2_5_0_,
+        student0_.updated as updated3_5_0_,
+        student0_.version as version4_5_0_,
+        student0_.first_name as first_na5_5_0_,
+        student0_.last_name as last_nam6_5_0_ 
+    from
+        student student0_ 
+    where
+        student0_.id=?
+2023-07-28T20:16:18,470|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [INTEGER] - [1]
+2023-07-28T20:16:18,482|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    select
+        courseregi0_.professor_id as professo8_2_0_,
+        courseregi0_.course_id as course_i1_2_0_,
+        courseregi0_.student_id as student_2_2_0_,
+        courseregi0_.course_id as course_i1_2_1_,
+        courseregi0_.student_id as student_2_2_1_,
+        courseregi0_.created as created3_2_1_,
+        courseregi0_.updated as updated4_2_1_,
+        courseregi0_.version as version5_2_1_,
+        courseregi0_.letter_grade as letter_g6_2_1_,
+        courseregi0_.numeric_grade as numeric_7_2_1_,
+        courseregi0_.professor_id as professo8_2_1_ 
+    from
+        course_registration courseregi0_ 
+    where
+        courseregi0_.professor_id=?
+2023-07-28T20:16:18,482|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [INTEGER] - [1]
+2023-07-28T20:16:18,486|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    select
+        courseregi0_.course_id as course_i1_2_0_,
+        courseregi0_.student_id as student_2_2_0_,
+        courseregi0_.course_id as course_i1_2_1_,
+        courseregi0_.student_id as student_2_2_1_,
+        courseregi0_.created as created3_2_1_,
+        courseregi0_.updated as updated4_2_1_,
+        courseregi0_.version as version5_2_1_,
+        courseregi0_.letter_grade as letter_g6_2_1_,
+        courseregi0_.numeric_grade as numeric_7_2_1_,
+        courseregi0_.professor_id as professo8_2_1_ 
+    from
+        course_registration courseregi0_ 
+    where
+        courseregi0_.course_id=?
+2023-07-28T20:16:18,486|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [INTEGER] - [1]
+2023-07-28T20:16:18,488|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    select
+        courseregi0_.student_id as student_2_2_0_,
+        courseregi0_.course_id as course_i1_2_0_,
+        courseregi0_.course_id as course_i1_2_1_,
+        courseregi0_.student_id as student_2_2_1_,
+        courseregi0_.created as created3_2_1_,
+        courseregi0_.updated as updated4_2_1_,
+        courseregi0_.version as version5_2_1_,
+        courseregi0_.letter_grade as letter_g6_2_1_,
+        courseregi0_.numeric_grade as numeric_7_2_1_,
+        courseregi0_.professor_id as professo8_2_1_ 
+    from
+        course_registration courseregi0_ 
+    where
+        courseregi0_.student_id=?
+2023-07-28T20:16:18,488|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [INTEGER] - [1]
+2023-07-28T20:16:18,494|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* update
+        acmecollege.entity.Course */ update
+            course 
+        set
+            updated=?,
+            version=?,
+            course_code=?,
+            course_title=?,
+            credit_units=?,
+            online=?,
+            semester=?,
+            year=? 
+        where
+            course_id=? 
+            and version=?
+2023-07-28T20:16:18,495|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [TIMESTAMP] - [2023-07-28T20:16:18.493081]
+2023-07-28T20:16:18,495|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [2] as [INTEGER] - [1]
+2023-07-28T20:16:18,495|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [3] as [VARCHAR] - [CST8116]
+2023-07-28T20:16:18,495|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [4] as [VARCHAR] - [Introduction to Computer Programming]
+2023-07-28T20:16:18,496|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [5] as [INTEGER] - [3]
+2023-07-28T20:16:18,496|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [6] as [TINYINT] - [0]
+2023-07-28T20:16:18,496|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [7] as [VARCHAR] - [WINTER]
+2023-07-28T20:16:18,496|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [8] as [INTEGER] - [2021]
+2023-07-28T20:16:18,496|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [9] as [INTEGER] - [1]
+2023-07-28T20:16:18,496|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [10] as [INTEGER] - [0]
+2023-07-28T20:16:18,497|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* update
+        acmecollege.entity.Professor */ update
+            professor 
+        set
+            updated=?,
+            version=?,
+            department=?,
+            first_name=?,
+            last_name=? 
+        where
+            professor_id=? 
+            and version=?
+2023-07-28T20:16:18,498|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [TIMESTAMP] - [2023-07-28T20:16:18.493266]
+2023-07-28T20:16:18,498|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [2] as [INTEGER] - [1]
+2023-07-28T20:16:18,498|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [3] as [VARCHAR] - [Physics]
+2023-07-28T20:16:18,498|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [4] as [VARCHAR] - [Charles]
+2023-07-28T20:16:18,498|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [5] as [VARCHAR] - [Xavier]
+2023-07-28T20:16:18,498|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [6] as [INTEGER] - [1]
+2023-07-28T20:16:18,498|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [7] as [INTEGER] - [0]
+2023-07-28T20:16:18,500|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* update
+        acmecollege.entity.Student */ update
+            student 
+        set
+            updated=?,
+            version=?,
+            first_name=?,
+            last_name=? 
+        where
+            id=? 
+            and version=?
+2023-07-28T20:16:18,501|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [TIMESTAMP] - [2023-07-28T20:16:18.493946]
+2023-07-28T20:16:18,501|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [2] as [INTEGER] - [1]
+2023-07-28T20:16:18,501|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [3] as [VARCHAR] - [Jack]
+2023-07-28T20:16:18,501|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [4] as [VARCHAR] - [Jackson]
+2023-07-28T20:16:18,501|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [5] as [INTEGER] - [1]
+2023-07-28T20:16:18,501|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [6] as [INTEGER] - [0]
+2023-07-28T20:16:18,504|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* select
+        generatedAlias0 
+    from
+        CourseRegistration as generatedAlias0 
+    where
+        generatedAlias0.id=:id */ select
+            courseregi0_.course_id as course_i1_2_,
+            courseregi0_.student_id as student_2_2_,
+            courseregi0_.created as created3_2_,
+            courseregi0_.updated as updated4_2_,
+            courseregi0_.version as version5_2_,
+            courseregi0_.letter_grade as letter_g6_2_,
+            courseregi0_.numeric_grade as numeric_7_2_,
+            courseregi0_.professor_id as professo8_2_ 
+        from
+            course_registration courseregi0_ 
+        where
+            (
+                courseregi0_.course_id, courseregi0_.student_id
+            )=(
+                ?, ?
+            )
+2023-07-28T20:16:18,505|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [INTEGER] - [1]
+2023-07-28T20:16:18,505|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [2] as [INTEGER] - [1]
+]]></system-out>
+  </testcase>
+  <testcase name="test08_DeleteDependecy" classname="acmecollege.entity.TestCRUDCourseRegistrationOriginal" time="0.04">
+    <system-out><![CDATA[2023-07-28T20:16:18,510|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* select
+        generatedAlias0 
+    from
+        CourseRegistration as generatedAlias0 
+    where
+        generatedAlias0.id=:id */ select
+            courseregi0_.course_id as course_i1_2_,
+            courseregi0_.student_id as student_2_2_,
+            courseregi0_.created as created3_2_,
+            courseregi0_.updated as updated4_2_,
+            courseregi0_.version as version5_2_,
+            courseregi0_.letter_grade as letter_g6_2_,
+            courseregi0_.numeric_grade as numeric_7_2_,
+            courseregi0_.professor_id as professo8_2_ 
+        from
+            course_registration courseregi0_ 
+        where
+            (
+                courseregi0_.course_id, courseregi0_.student_id
+            )=(
+                ?, ?
+            )
+2023-07-28T20:16:18,518|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [INTEGER] - [1]
+2023-07-28T20:16:18,518|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [2] as [INTEGER] - [1]
+2023-07-28T20:16:18,532|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* update
+        acmecollege.entity.CourseRegistration */ update
+            course_registration 
+        set
+            updated=?,
+            version=?,
+            letter_grade=?,
+            numeric_grade=?,
+            professor_id=? 
+        where
+            course_id=? 
+            and student_id=? 
+            and version=?
+2023-07-28T20:16:18,533|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [TIMESTAMP] - [2023-07-28T20:16:18.531892]
+2023-07-28T20:16:18,533|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [2] as [INTEGER] - [2]
+2023-07-28T20:16:18,533|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [3] as [VARCHAR] - [A]
+2023-07-28T20:16:18,534|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [4] as [INTEGER] - [85]
+2023-07-28T20:16:18,534|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [5] as [INTEGER] - [null]
+2023-07-28T20:16:18,535|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [6] as [INTEGER] - [1]
+2023-07-28T20:16:18,536|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [7] as [INTEGER] - [1]
+2023-07-28T20:16:18,536|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [8] as [INTEGER] - [1]
+2023-07-28T20:16:18,540|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* select
+        generatedAlias0 
+    from
+        CourseRegistration as generatedAlias0 
+    where
+        generatedAlias0.id=:id */ select
+            courseregi0_.course_id as course_i1_2_,
+            courseregi0_.student_id as student_2_2_,
+            courseregi0_.created as created3_2_,
+            courseregi0_.updated as updated4_2_,
+            courseregi0_.version as version5_2_,
+            courseregi0_.letter_grade as letter_g6_2_,
+            courseregi0_.numeric_grade as numeric_7_2_,
+            courseregi0_.professor_id as professo8_2_ 
+        from
+            course_registration courseregi0_ 
+        where
+            (
+                courseregi0_.course_id, courseregi0_.student_id
+            )=(
+                ?, ?
+            )
+2023-07-28T20:16:18,541|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [INTEGER] - [1]
+2023-07-28T20:16:18,541|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [2] as [INTEGER] - [1]
+2023-07-28T20:16:18,546|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* select
+        count(generatedAlias0) 
+    from
+        Professor as generatedAlias0 
+    where
+        generatedAlias0.id=:id */ select
+            count(professor0_.professor_id) as col_0_0_ 
+        from
+            professor professor0_ 
+        where
+            professor0_.professor_id=?
+2023-07-28T20:16:18,547|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [INTEGER] - [1]
+]]></system-out>
+  </testcase>
+  <testcase name="test09_Delete" classname="acmecollege.entity.TestCRUDCourseRegistrationOriginal" time="0.045">
+    <system-out><![CDATA[2023-07-28T20:16:18,552|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* select
+        generatedAlias0 
+    from
+        CourseRegistration as generatedAlias0 
+    where
+        generatedAlias0.id=:id */ select
+            courseregi0_.course_id as course_i1_2_,
+            courseregi0_.student_id as student_2_2_,
+            courseregi0_.created as created3_2_,
+            courseregi0_.updated as updated4_2_,
+            courseregi0_.version as version5_2_,
+            courseregi0_.letter_grade as letter_g6_2_,
+            courseregi0_.numeric_grade as numeric_7_2_,
+            courseregi0_.professor_id as professo8_2_ 
+        from
+            course_registration courseregi0_ 
+        where
+            (
+                courseregi0_.course_id, courseregi0_.student_id
+            )=(
+                ?, ?
+            )
+2023-07-28T20:16:18,555|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [INTEGER] - [1]
+2023-07-28T20:16:18,555|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [2] as [INTEGER] - [1]
+2023-07-28T20:16:18,558|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    select
+        student0_.id as id1_5_0_,
+        student0_.created as created2_5_0_,
+        student0_.updated as updated3_5_0_,
+        student0_.version as version4_5_0_,
+        student0_.first_name as first_na5_5_0_,
+        student0_.last_name as last_nam6_5_0_ 
+    from
+        student student0_ 
+    where
+        student0_.id=?
+2023-07-28T20:16:18,558|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [INTEGER] - [1]
+2023-07-28T20:16:18,560|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    select
+        courseregi0_.student_id as student_2_2_0_,
+        courseregi0_.course_id as course_i1_2_0_,
+        courseregi0_.course_id as course_i1_2_1_,
+        courseregi0_.student_id as student_2_2_1_,
+        courseregi0_.created as created3_2_1_,
+        courseregi0_.updated as updated4_2_1_,
+        courseregi0_.version as version5_2_1_,
+        courseregi0_.letter_grade as letter_g6_2_1_,
+        courseregi0_.numeric_grade as numeric_7_2_1_,
+        courseregi0_.professor_id as professo8_2_1_ 
+    from
+        course_registration courseregi0_ 
+    where
+        courseregi0_.student_id=?
+2023-07-28T20:16:18,561|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [INTEGER] - [1]
+2023-07-28T20:16:18,563|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* insert acmecollege.entity.Course
+        */ insert 
+        into
+            course
+            (created, updated, version, course_code, course_title, credit_units, online, semester, year) 
+        values
+            (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-07-28T20:16:18,564|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [TIMESTAMP] - [2023-07-28T20:16:18.563517]
+2023-07-28T20:16:18,564|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [2] as [TIMESTAMP] - [2023-07-28T20:16:18.563517]
+2023-07-28T20:16:18,564|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [3] as [INTEGER] - [0]
+2023-07-28T20:16:18,564|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [4] as [VARCHAR] - [CST8288]
+2023-07-28T20:16:18,564|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [5] as [VARCHAR] - [Design Patters in Java]
+2023-07-28T20:16:18,564|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [6] as [INTEGER] - [3]
+2023-07-28T20:16:18,565|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [7] as [TINYINT] - [0]
+2023-07-28T20:16:18,565|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [8] as [VARCHAR] - [SPRING]
+2023-07-28T20:16:18,565|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [9] as [INTEGER] - [2022]
+2023-07-28T20:16:18,568|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* insert acmecollege.entity.CourseRegistration
+        */ insert 
+        into
+            course_registration
+            (created, updated, version, letter_grade, numeric_grade, professor_id, course_id, student_id) 
+        values
+            (?, ?, ?, ?, ?, ?, ?, ?)
+2023-07-28T20:16:18,568|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [TIMESTAMP] - [2023-07-28T20:16:18.563395]
+2023-07-28T20:16:18,568|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [2] as [TIMESTAMP] - [2023-07-28T20:16:18.563395]
+2023-07-28T20:16:18,569|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [3] as [INTEGER] - [0]
+2023-07-28T20:16:18,569|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [4] as [VARCHAR] - [null]
+2023-07-28T20:16:18,569|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [5] as [INTEGER] - [99]
+2023-07-28T20:16:18,569|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [6] as [INTEGER] - [null]
+2023-07-28T20:16:18,569|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [7] as [INTEGER] - [2]
+2023-07-28T20:16:18,569|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [8] as [INTEGER] - [1]
+2023-07-28T20:16:18,579|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    select
+        course0_.course_id as course_i1_1_0_,
+        course0_.created as created2_1_0_,
+        course0_.updated as updated3_1_0_,
+        course0_.version as version4_1_0_,
+        course0_.course_code as course_c5_1_0_,
+        course0_.course_title as course_t6_1_0_,
+        course0_.credit_units as credit_u7_1_0_,
+        course0_.online as online8_1_0_,
+        course0_.semester as semester9_1_0_,
+        course0_.year as year10_1_0_ 
+    from
+        course course0_ 
+    where
+        course0_.course_id=?
+2023-07-28T20:16:18,579|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [INTEGER] - [1]
+2023-07-28T20:16:18,584|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* delete acmecollege.entity.CourseRegistration */ delete 
+        from
+            course_registration 
+        where
+            course_id=? 
+            and student_id=? 
+            and version=?
+2023-07-28T20:16:18,585|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [INTEGER] - [1]
+2023-07-28T20:16:18,585|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [2] as [INTEGER] - [1]
+2023-07-28T20:16:18,585|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [3] as [INTEGER] - [2]
+2023-07-28T20:16:18,588|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* delete acmecollege.entity.Course */ delete 
+        from
+            course 
+        where
+            course_id=? 
+            and version=?
+2023-07-28T20:16:18,588|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [INTEGER] - [1]
+2023-07-28T20:16:18,588|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [2] as [INTEGER] - [1]
+2023-07-28T20:16:18,591|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* select
+        count(generatedAlias0) 
+    from
+        CourseRegistration as generatedAlias0 
+    where
+        generatedAlias0.id=:id */ select
+            count(courseregi0_.course_id) as col_0_0_ 
+        from
+            course_registration courseregi0_ 
+        where
+            (
+                courseregi0_.course_id, courseregi0_.student_id
+            )=(
+                ?, ?
+            )
+2023-07-28T20:16:18,592|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [INTEGER] - [1]
+2023-07-28T20:16:18,592|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [2] as [INTEGER] - [1]
+2023-07-28T20:16:18,593|&amp#27;[36m[DEBUG]&amp#27;[m SQL -
+    /* select
+        count(generatedAlias0) 
+    from
+        CourseRegistration as generatedAlias0 
+    where
+        generatedAlias0.id=:id */ select
+            count(courseregi0_.course_id) as col_0_0_ 
+        from
+            course_registration courseregi0_ 
+        where
+            (
+                courseregi0_.course_id, courseregi0_.student_id
+            )=(
+                ?, ?
+            )
+2023-07-28T20:16:18,594|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [1] as [INTEGER] - [2]
+2023-07-28T20:16:18,594|&amp#27;[30m[TRACE]&amp#27;[m BasicBinder -binding parameter [2] as [INTEGER] - [1]
+]]></system-out>
+  </testcase>
+</testsuite>
